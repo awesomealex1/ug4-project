@@ -1,0 +1,1 @@
+python faceforensics_download_v4.py /exports/eddie/scratch/s2017377/code/ff/FaceForensics/dataset -d all -c c23 -t videos --server EU2 (do this in interactive session)

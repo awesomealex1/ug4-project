@@ -1,0 +1,26 @@
+Eddie: Edinburgh uni cluster for big computing jobs. Has lots of CPUs and GPUs
+
+Connect to eddie: ssh s2017377@eddie.ecdf.ed.ac.uk (Need to be on uni network or vpn, password is EASE password)
+
+Submit a job: qsub script-name.sh
+
+- Jobs use Grid Engine
+- Shouldn't use home directory as working directory. Use scratch directory instead /exports/eddie/scratch/s2017377
+- Use "#$ -cwd" to specifify to use current directory as working directory or "#$ -wd" to specify a working directory
+
+Transfer files to eddie with "scp -r /code/dir/or/file s2017377@eddie.ecdf.ed.ac.uk:/remote/code/dir/or/file"
+
+- Common eddie dir is /exports/home/s2017377/ug-project/code or /exports/eddie/scratch/s2017377
+- Common laptop dir is /Users/alexandermurphy/Desktop/University/ug-project/code
+
+Anaconda:
+- conda config --add envs_dirs /exports/eddie/scratch/s2017377/anaconda/envs
+- conda config --add pkgs_dirs /exports/eddie/scratch/s2017377/anaconda/pkgs
+
+Creating conda environment and installing packages. Note that this should be in an interactive session with more than 4GB
+(- qlogin -l h_vmem=5G)
+
+- module load anaconda
+- conda create -n env_name python=3.7.4 -y
+- conda activate env_name
+- conda install python=3.6 pytorch torchvision matplotlib pandas -c pytorch
