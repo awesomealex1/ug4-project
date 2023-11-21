@@ -1,1 +1,14 @@
 python faceforensics_download_v4.py /exports/eddie/scratch/s2017377/code/ff/FaceForensics/dataset -d all -c c23 -t videos --server EU2 (do this in interactive session)
+
+/exports/eddie/scratch/s2017377/code/ff/FaceForensics/dataset/manipulated_sequences/DeepFakeDetection/c23/videos
+/exports/eddie/scratch/s2017377/code/ff/FaceForensics/classification/network/faceforensics++_models_subset/full/xception/full_c23.p
+
+python detect_from_video.py -i /exports/eddie/scratch/s2017377/code/ff/FaceForensics/dataset/manipulated_sequences/DeepFakeDetection/c23/videos/07_21__walking_down_street_outside_angry__K7KXUHMU.mp4 -m /exports/eddie/scratch/s2017377/code/ff/FaceForensics/classification/network/faceforensics++_models_subset/full/xception/full_c23.p -o pred-out/
+
+07_21__walking_down_street_outside_angry__K7KXUHMU.mp4
+
+python detect_from_video.py -i /exports/eddie/scratch/s2017377/code/ff/FaceForensics/dataset/manipulated_sequences/DeepFakeDetection/c23/videos/07_21__walking_down_street_outside_angry__K7KXUHMU.mp4 -m /exports/eddie/scratch/s2017377/code/ff/FaceForensics/classification/network/faceforensics++_models_subset/full/xception/full_c23.p -o pred-out/
+
+18_03__walk_down_hall_angry__22UBC0BS.mp4
+
+python detect_from_video.py -i /exports/eddie/scratch/s2017377/code/ff/FaceForensics/dataset/manipulated_sequences/FaceSwap/c23/videos/021_312.mp4 -m /exports/eddie/scratch/s2017377/code/ff/FaceForensics/classification/network/faceforensics++_models_subset/full/xception/full_c23.p -o pred-out/

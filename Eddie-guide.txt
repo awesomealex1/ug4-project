@@ -5,7 +5,7 @@ Connect to eddie: ssh s2017377@eddie.ecdf.ed.ac.uk (Need to be on uni network or
 Submit a job: qsub script-name.sh
 
 - Jobs use Grid Engine
-- Shouldn't use home directory as working directory. Use scratch directory instead /exports/eddie/scratch/s2017377
+- Shouldn't use home directory as working directory. Use scratch directory instead 
 - Use "#$ -cwd" to specifify to use current directory as working directory or "#$ -wd" to specify a working directory
 
 Transfer files to eddie with "scp -r /code/dir/or/file s2017377@eddie.ecdf.ed.ac.uk:/remote/code/dir/or/file"
@@ -24,3 +24,5 @@ Creating conda environment and installing packages. Note that this should be in 
 - conda create -n env_name python=3.7.4 -y
 - conda activate env_name
 - conda install python=3.6 pytorch torchvision matplotlib pandas -c pytorch
+
+/exports/eddie/scratch/s2017377/code/ff/FaceForensics/dataset/manipulated_sequences/DeepFakeDetection/c23/videos
