@@ -26,3 +26,6 @@ Creating conda environment and installing packages. Note that this should be in 
 - conda install python=3.6 pytorch torchvision matplotlib pandas -c pytorch
 
 /exports/eddie/scratch/s2017377/code/ff/FaceForensics/dataset/manipulated_sequences/DeepFakeDetection/c23/videos
+
+Interactive GPU session:
+- qlogin -q gpu -pe gpu-a100 1 -l h_rt=12:00:00 h_vmem=20G
